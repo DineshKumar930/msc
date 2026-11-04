@@ -1,0 +1,163 @@
+.classes {
+  padding: 100px 20px;
+  background: #ffffff;
+}
+
+.classes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.classes-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 60px;
+}
+
+.section-tag {
+  display: inline-block;
+  background: #eef2ff;
+  color: #6366f1;
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.classes-subtitle {
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+}
+
+.class-card {
+  position: relative;
+  background: #fff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 32px 26px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  opacity: 0;
+  animation: cardIn 0.7s ease forwards;
+}
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.class-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.class-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+.class-card:hover::before {
+  transform: scaleX(1);
+}
+
+.class-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-size: 1.7rem;
+  background: color-mix(in srgb, var(--accent) 12%, white);
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+}
+
+.class-card:hover .class-icon {
+  transform: rotate(-8deg) scale(1.08);
+}
+
+.class-level {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.class-desc {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+
+.class-points {
+  list-style: none;
+  margin-bottom: 22px;
+}
+
+.class-points li {
+  font-size: 0.85rem;
+  color: #475569;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.check {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.class-link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent);
+  transition: gap 0.3s;
+  display: inline-flex;
+  gap: 4px;
+}
+
+.class-link:hover {
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .classes { padding: 70px 20px; }
+  .classes-grid { grid-template-columns: 1fr; }
+}

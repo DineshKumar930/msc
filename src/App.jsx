@@ -7,8 +7,9 @@ import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import FloatingButtons from './components/FloatingButtons'
-import './App.css'
 import Board from './components/Board'
+
+import './App.css'
 
 function App() {
   return (

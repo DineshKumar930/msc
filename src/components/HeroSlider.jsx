@@ -7,7 +7,7 @@ const slides = [
     title: 'Shaping Bright Futures',
     subtitle: 'Expert coaching from Nursery to Class 10',
     tag: 'JAC • CBSE • ICSE',
-    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1600&q=80',
+    image: 'images/sl1.jpeg',
     accent: 'Learn • Grow • Succeed'
   },
   {
@@ -15,7 +15,7 @@ const slides = [
     title: 'Personalized Attention',
     subtitle: 'Small batches, big results with Munita Ma\'am',
     tag: 'B.Sc, DEIED Qualified',
-    image: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1600&q=80',
+    image: 'images/sl2.jpeg',
     accent: 'Every Child Matters'
   },
   {
@@ -23,7 +23,16 @@ const slides = [
     title: 'Building Strong Foundations',
     subtitle: 'Concept-based learning that lasts a lifetime',
     tag: 'Kedua, Dhanbad',
-    image: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=1600&q=80',
+    image: 'images/sl3.jpeg',
+    accent: 'Where Learning Begins'
+  },
+  ,
+  {
+    id: 4,
+    title: 'Building Strong Foundations',
+    subtitle: 'Concept-based learning that lasts a lifetime',
+    tag: 'Kedua, Dhanbad',
+    image: 'images/sl4.jpeg',
     accent: 'Where Learning Begins'
   },
 ]

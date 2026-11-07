@@ -53,7 +53,7 @@ function Contact() {
               <span className="contact-icon">🕒</span>
               <div>
                 <h4>Class Hours</h4>
-                <p>Mon–Sat, 4:00 PM – 8:00 PM</p>
+                <p>Mon–Sat, 08:00 AM – 06:00 PM</p>
               </div>
             </div>
           </div>

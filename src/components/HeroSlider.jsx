@@ -26,7 +26,6 @@ const slides = [
     image: 'images/sl3.jpeg',
     accent: 'Where Learning Begins'
   },
-  ,
   {
     id: 4,
     title: 'Building Strong Foundations',
@@ -34,7 +33,7 @@ const slides = [
     tag: 'Kedua, Dhanbad',
     image: 'images/sl4.jpeg',
     accent: 'Where Learning Begins'
-  },
+  }
 ]
 
 const HeroSlider = () => {

@@ -34,7 +34,7 @@ const profiles = [
     name: 'Sujeet Sir',
     image: 'images/sujeet.jpeg',
     alt: 'Co-ordinator Sujeet',
-    role: 'Co-ordinator',
+  
     badgeNumber: '5+',
     badgeText: ['Years', 'Coordination'],
     tag: 'Our Co-ordinator',
